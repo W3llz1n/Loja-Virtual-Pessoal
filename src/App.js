@@ -1,33 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import HelloWorld from './component/HelloWorld';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+// pages
+import Home from './pages/home/Home';
+import Catagolo from './pages/catálogos/catalogos';
+import Contato from './pages/contato/Contato';
+
+//components
+import Navbar from './component/navbar/Navbar'
+
 
 function App() {
   return (
-    <div className="App">
-
-      <header className="App-header">
-
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <HelloWorld
-          text='Hello World!!!'
-        />
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        
-      </header>
-    </div>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+        <Route path='/categoria' element={<Catagolo/>}/>
+        <Route path='contato' element={<Contato/>}/>
+      </Routes>
+    </Router>
   );
 }
 

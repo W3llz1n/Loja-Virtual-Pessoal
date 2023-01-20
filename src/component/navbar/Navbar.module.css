@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    width: 100vw;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.list li {
+    margin-left: 20px;
+}
+
+.list a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: all 0.5s ease;
+    border-radius: 30px;
+}
+
+.list a:hover{
+    color: black;
+    background-color: #fff;
+}
