@@ -1,0 +1,1 @@
+Uma loja virtual simples para venda de produtos de afiliados.
