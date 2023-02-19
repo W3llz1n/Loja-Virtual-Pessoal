@@ -7,11 +7,13 @@ import Contato from './pages/contato/Contato';
 
 //components
 import Navbar from './component/navbar/Navbar'
+import Header from './component/header/Header'
 
 
 function App() {
   return (
     <Router>
+      <Header/>
       <Navbar/>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
