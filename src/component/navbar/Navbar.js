@@ -11,7 +11,13 @@ function Navbar() {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/categoria">Catalogo</Link>
+                    <Link to="/categoria">Casa/Cozinha</Link>
+                </li>
+                <li>
+                    <Link to="/">Quarto/Decorações</Link>
+                </li>
+                <li>
+                    <Link to="">Eletronicos</Link>
                 </li>
                 <li>
                     <Link to="/contato">Contato</Link>

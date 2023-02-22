@@ -1,10 +1,35 @@
-header{
+header {
     padding: 10px 25px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100vw;
 }
 
-header img{
+header img {
     height: 70px;
+}
+
+.box_search {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.box_search .bar_search {
+    width: 350px;
+    height: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    padding: 15px;
+}
+
+.buttom {
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0px 15px;
+    background-color: #FE4830;
+    color: #ffffff;
 }
